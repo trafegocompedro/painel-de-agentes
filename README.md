@@ -25,6 +25,24 @@ Responda `y` para adicionar o marketplace e escolha o escopo (o primeiro, de usu
 claude plugin install painel-de-agentes --marketplace trafegocompedro/painel-de-agentes
 ```
 
+## Como receber as atualizações
+
+O Claude Code não atualiza sozinho os plugins de marketplaces de terceiros, como este. Para receber cada versão nova sem fazer nada:
+
+1. Numa sessão do Claude Code, digite `/plugin`.
+2. Abra a aba **Marketplaces** e escolha **painel-de-agentes**.
+3. Ligue a atualização automática (*auto-update*).
+
+Com ela ligada, o Claude Code procura uma versão nova alguns minutos depois da primeira mensagem de cada sessão. Quando ele atualiza, aparece o aviso `Plugin updated`. Digite `/reload-plugins` para usar a versão nova na hora, ou ela entra na próxima vez que você abrir o Claude.
+
+Para atualizar uma vez só, sem ligar a atualização automática, abra `/plugin`, vá na aba **Installed**, escolha o plugin e clique em **Update now**. Pelo terminal do sistema, o comando é:
+
+```bash
+claude plugin update painel-de-agentes@painel-de-agentes
+```
+
+Se a opção de atualização automática não aparecer, as atualizações do Claude Code podem estar desligadas (`DISABLE_AUTOUPDATER=1` ou `DISABLE_UPDATES=1`). Para manter só as dos plugins, defina também `FORCE_AUTOUPDATE_PLUGINS=1`.
+
 ## Como usar
 
 - `/agentes` mostra ou esconde o painel.
