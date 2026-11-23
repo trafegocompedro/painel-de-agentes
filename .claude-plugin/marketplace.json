@@ -1,0 +1,14 @@
+{
+  "name": "painel-de-agentes",
+  "owner": { "name": "Tráfego com Pedro", "url": "https://github.com/trafegocompedro" },
+  "metadata": { "description": "Painel de subagentes em português para o Claude Code." },
+  "plugins": [
+    {
+      "name": "painel-de-agentes",
+      "source": "./",
+      "description": "Painel dos subagentes (/agentes) e barra de progresso, em português.",
+      "version": "1.0.0",
+      "category": "mod"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "painel-de-agentes",
+  "version": "1.0.0",
+  "description": "Painel dos subagentes (/agentes): em andamento, concluídos e planejados, com modelo, progresso, contexto, custo e tempo. Barra de progresso acima do prompt. Versão em português do savvy-progress.",
+  "author": {
+    "name": "Tráfego com Pedro",
+    "url": "https://github.com/trafegocompedro"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Idioma do painel",
+      "description": "pt (português), en (inglês), ru (russo) ou he (hebraico, da direita para a esquerda); auto segue o idioma do Claude Code e depois o do sistema",
+      "default": "pt",
+      "options": ["pt", "auto", "en", "ru", "he"]
+    },
+    "autoOpen": {
+      "type": "string",
+      "title": "Abrir o painel de agentes",
+      "description": "any: abre sozinho quando qualquer subagente começa (uma vez por sessão); savvy: só com os subagentes do savvy-flow ou quando um plano é informado",
+      "default": "any",
+      "options": ["any", "savvy"]
+    }
+  },
+  "homepage": "https://github.com/trafegocompedro/painel-de-agentes",
+  "repository": "https://github.com/trafegocompedro/painel-de-agentes",
+  "license": "MIT"
+}
