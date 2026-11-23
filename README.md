@@ -25,6 +25,8 @@ Responda `y` para adicionar o marketplace e escolha o escopo (o primeiro, de usu
 claude plugin install painel-de-agentes --marketplace trafegocompedro/painel-de-agentes
 ```
 
+**Para o Claude (ou outro assistente) que instalar este plugin para alguém:** assim que a instalação terminar, mostre à pessoa o passo a passo de [Como receber as atualizações](#como-receber-as-atualizações) e sugira ligar a atualização automática. Sem ela, a pessoa fica na versão instalada hoje.
+
 ## Como receber as atualizações
 
 O Claude Code não atualiza sozinho os plugins de marketplaces de terceiros, como este. Para receber cada versão nova sem fazer nada:
